@@ -1,0 +1,356 @@
+/*
+Authors: Zacheriah Garcia
+Date: October 29, 2026
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, ul, figure, figcaption, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Style rule for images */
+img {
+	max-height: 100%;
+	display: block;
+}
+
+/* Style rules for mobile viweport */
+
+/* Style rules to show mobile class */
+.mobile {
+	display: block;
+}
+
+.tab-desk, #menu-link {
+	display: none;
+}
+
+/* Style rules for header content */
+header {
+	text-align: center;
+	font-size: 1em;
+	font-family: "Quantico", sans-serif;
+	color: #fff;
+	background-color: #002366;
+	padding: 1em;
+}
+
+header h2 {
+		font-style: italic;
+}
+
+.border {
+		border: 5px solid #848482;
+}
+
+figure {
+	max-width: 510px;
+	margin: 2% auto;
+}
+
+figcaption {
+	padding: 2%;
+}
+
+/* Style rules for navigation area */
+nav {
+	background-color: #000;
+}
+
+/* Style for rules for hamburger menu */
+.mobile-nav a {
+	color: #fff;
+	font-family: "Quantico", sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* Style rules for main content */
+main {
+	padding: 1%;
+	font-family: "Commissioner", sans-serif;
+}
+
+main p {
+	font-size: 1.25em;
+}
+
+main ul {
+	margin-left: 7%;
+	padding-bottom: 4%;
+}
+
+main li {
+	font-size: 1.2em;
+}
+
+main h4 {
+	font-style: italic
+}
+
+.links {
+	font-style: italic;
+	font-weight: bold;
+	color: #002366;
+	text-decoration: none;
+}
+
+aside {
+	text-align: center;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+section {
+	border: 5px solid #002366;
+	box-shadow: 5px 5px 5px #000;
+	max-width: 400px;
+	max-height: 400px;
+	padding: 3%;
+	margin: 5%;
+	font-size: 1em
+}
+
+section h2 {
+	border-bottom: 2px solid #002366;
+	max-width: 215px;
+}
+
+section p {
+	font-style: italic;
+}
+
+/* Style rules for mobile format and phone */
+
+.round {
+	border-radius: 6px;
+}
+
+#contact, #main-footer {
+	text-align: center;
+}
+
+.tel-link {
+	background-color: #002366;
+	padding: 2%;
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.tel-link a {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* Style rules for form elements */
+fieldset, input, textarea {
+	margin-bottom: 2%;
+}
+
+fieldset legend {
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+label {
+	display: block;
+	padding-top: 2%;
+}
+
+#submit {
+	margin: 0 auto;
+	display: block;
+	background-color: #002366;
+	color: #fff;
+	padding: 1%;
+	border-radius: 10px;
+}
+
+#form h2 {
+	text-align: center;
+}
+
+/* Style rules for footer content */
+footer {
+	text-align: center;
+	font-size: 0.85em;
+	background-color: #000;
+	font-family: Verdana, Arial, sans-serif;
+	padding: 0.5em;
+	color: #fff;
+}
+
+footer a {
+	color: #0051eb;
+	text-decoration: none;
+}
+
+/* Style rule for the social */
+.social img {
+	display: inline-block;
+	padding: 0 1%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px) {
+	
+	/* Tablet Viewport: Show tab-desk class, hide mobile class */
+	.tab-desk {
+		display: block;
+	}
+	
+	.mobile, .mobile-nav {
+		display: none;
+	}
+	
+	/* Tablet Viewport: Style rules for header */
+	header {
+		background: linear-gradient(to left, #002366, #000, #002366);
+	}
+	
+	/* Tablet Viewport: Style rules for nav area */
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+	}
+	
+	nav li {
+		font-family: "Quantico", sans-serif;
+		font-weight: bold;
+		border-top: none;
+		display: inline-block;
+		font-size: 1.25em;
+	}
+	
+	nav li a {
+		display: block;
+		color: #fff;
+		padding: 0.5em 2em;
+		text-decoration: none;
+	}
+	
+	/* Tablet Viewport: Style rules for main content */
+	
+	.center-img {
+	margin: auto;
+}
+	
+	#about-me {
+		width: 55%;
+		margin: 0 auto;
+	}
+	
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 10px;
+	}
+	
+	aside {
+		grid-column: 1 / span 2;
+	}
+	
+	/* Tablet Viewport: Style rule for table */
+	table {
+		border: 2px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	caption {
+		font-size: 2em;
+		font-weight: bold;
+		color: #002366;
+		padding: 1%;
+	}
+	
+	th, td {
+		border: 1px solid #000;
+		font-size: 1.25em;
+		padding: 2%;
+	}
+	
+	th {
+		background-color: #002366;
+		color: #fff;
+		font-size: 1.5em;
+	}
+	
+	tr:nth-child(odd) {
+		background-color: #ccc;
+	}
+	
+	/* Tablet Viewport: Style rule for form element */
+	form {
+		width: 70%;
+		margin: 0 auto;
+	}
+	
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px) {
+	
+	/* Desktop Viewport: Style rules for nav area */
+	nav li {
+		font-size: 1.5em;
+	}
+	
+	nav li a {
+		padding: 0.5em 1.5em;
+	}
+	
+	nav li a:hover{
+		color: #000;
+		background-color: #fff;
+	}
+	
+	#transform a {
+		transition: transform 0.4s;
+	}
+	
+	#transform a:hover {
+		 transform: translateY(-1px) translateX(3px);
+	}
+	
+	.grid {
+		grid-template-columns: auto auto auto auto;
+	}
+	
+	aside {
+		grid-column: 1 / span 4;
+		font-size: 1.5em;
+	}
+	
+	/* Desktop Viewport: Style rules for form elements */
+	form {
+		width: auto;
+	}
+	
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-gap: 20px;
+	}
+	
+	.btn {
+		grid-column: 1 / span 2;
+	}
+	
+}
